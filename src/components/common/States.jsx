@@ -1,0 +1,3 @@
+export function Loading({ label = 'Finding the good stuff…' }) { return <div className="state"><span className="spinner" /><p>{label}</p></div>; }
+export function ErrorState({ onRetry }) { return <div className="state"><h2>Something got in the way.</h2><p>We couldn't load this right now. Give it another go.</p>{onRetry && <button className="button" onClick={onRetry}>Retry</button>}</div>; }
+export function EmptyState({ title = 'Nothing here yet', text = 'Try another search or explore the full menu.', action }) { return <div className="empty-state"><span className="empty-mark">✦</span><h2>{title}</h2><p>{text}</p>{action}</div>; }

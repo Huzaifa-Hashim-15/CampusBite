@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom';
+export default function Footer() { return <footer><div><Link className="wordmark footer-mark" to="/">Crave<span>Corner</span><i>.</i></Link><p>Good food. Better breaks.</p></div><div className="footer-links"><Link to="/">Menu</Link><Link to="/favourites">Favourites</Link><Link to="/cart">Your cart</Link></div><small>Built for busy campus days · Simulated ordering experience</small></footer>; }

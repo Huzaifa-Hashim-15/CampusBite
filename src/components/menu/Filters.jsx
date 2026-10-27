@@ -1,0 +1,3 @@
+import { Search } from 'lucide-react';
+export const categories = ['All Items','Burgers','Pizza','Sandwiches','Pakistani Food','Fast Food','Drinks','Desserts'];
+export default function Filters({ search, setSearch, category, setCategory }) { return <div className="filters"><label className="search-box"><Search size={18}/><input aria-label="Search menu" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by dish, ingredient or mood"/></label><div className="chips" aria-label="Food categories">{categories.map((name) => <button key={name} className={category === name ? 'chip selected' : 'chip'} onClick={() => setCategory(name)}>{name}</button>)}</div></div>; }
